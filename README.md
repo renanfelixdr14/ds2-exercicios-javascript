@@ -54,3 +54,7 @@ EOF
 
  * **Mensagem exibida:** Uncaught ReferenceError: Console is not defined
  * **Motivo:** ele trata o console como uma variavel pela primeira letra estar maiuscula ou seja case sensitivity.
+
+ ## Explicação do por que usei convert no idade antes do calculo
+
+  * **Motivo:** O resultado "205" acontece quando o prompt trás o que foi escrito(na questão a idade de 20 anos) como String, para o resultado aparecer de maneira correta é utilizado o "Number" *EX: Number(prompt("Escreva a sua idade:"))* que resulta em "25 anos".

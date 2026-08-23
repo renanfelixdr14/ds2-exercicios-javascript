@@ -11,7 +11,8 @@ Uma página dinâmica é processada no **servidor**, no exato momento em que o u
 Um banco de dados é necessário porque páginas dinâmicas costumam exibir conteúdos personalizados, atualizados e mutáveis (como perfis de usuários, catálogos de produtos, postagens, etc.) que não ficam fixos em arquivos de código. O banco de dados armazena essas informações de forma estruturada, permitindo que o servidor as consulte e utilize para montar a página personalizada para cada requisição.
 EOF
 
-##Tabela Comparativa: Página Estática vs Página Dinâmica
+## Tabela Comparativa: Página Estática vs Página Dinâmica
+
 | Critério / Aspecto | Página Estática(Lado ao Cliente) | Página Dinâmica(Lado do Servidor) |
 | :--- | :--- | :--- |
 | **Local em que o código é executado** | Navegador do usuário (*Client-side*) | Servidor de aplicação (*Server-side*) |

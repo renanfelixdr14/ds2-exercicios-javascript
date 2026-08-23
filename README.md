@@ -49,3 +49,8 @@ EOF
 6. **Controlar uma sessão do usuário**
    * **Classificação:** Possível em ambos.
    * **Justificativa:** O servidor *server-side* é quem gera e valida o passe de acesso(Session ID, Token JWT) provando que o usuário está logado. O navegador *client-side* tem a responsabilidade de armazenar esse passe(em Cookies ou LocalStorage) e enviá-lo de volta em todas as requisições seguintes.
+
+## Registrando erro intencional deixando no exercicio01 o "Console.log" com "c" maiusculo.
+
+ * **Mensagem exibida:** Uncaught ReferenceError: Console is not defined
+ * **Motivo:** ele trata o console como uma variavel pela primeira letra estar maiuscula ou seja case sensitivity.

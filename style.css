@@ -1,0 +1,109 @@
+/* style.css */
+:root {
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --primary-color: #3498db;
+    --static-color: #e67e22;
+    --dynamic-color: #27ae60;
+    --btn-color: #2c3e50;
+    --btn-hover: #1a252f;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    border-left: 5px solid #ccc;
+}
+
+.card.static { border-left-color: var(--static-color); }
+.card.dynamic { border-left-color: var(--dynamic-color); }
+
+.type-title { margin-top: 0; }
+.static .type-title { color: var(--static-color); }
+.dynamic .type-title { color: var(--dynamic-color); }
+
+ol {
+    background: var(--card-bg);
+    padding: 25px 25px 25px 45px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li strong {
+    color: var(--primary-color);
+}
+
+/*Estilo da seção de botões*/
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-exercicio {
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    
+    /* Faz os botões ficarem com o mesmo tamanho e se adaptarem a tela */
+    flex: 1 1 calc(33.333% - 15px);
+    min-width: 140px; 
+    text-align: center;
+}
+
+.btn-exercicio:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn-exercicio:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

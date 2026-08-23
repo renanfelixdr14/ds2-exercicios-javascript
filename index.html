@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundamentos da Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="exercicio01">Exercicio01</button>
-    <button id="exercicio02">Exercicio02</button>
-    <script src="exercicio01.js"></script>
-    <script src="exercicio02.js"></script>
+    <h1>Fundamentos da Web</h1>
+    
+    <div class="card static">
+        <h2 class="type-title">Página Estática</h2>
+        <p><strong>Definição:</strong> É uma página cujos arquivos (HTML, CSS e JavaScript) já estão prontos e salvos no servidor. Quando o usuário acessa, o servidor apenas envia esses arquivos exatamente como estão, sem realizar nenhum processamento de dados. O conteúdo entregue é o mesmo para todos os visitantes.</p>
+        <p><strong>Exemplo Real:</strong> O site de documentação de uma linguagem de programação, uma landing page promocional (sem sistema de login) ou o site de portfólio de um profissional.</p>
+    </div>
+
+    <div class="card dynamic">
+        <h2 class="type-title">Página Dinâmica</h2>
+        <p><strong>Definição:</strong> É uma página que não existe pronta no servidor, mas é gerada sob demanda. Quando o usuário faz a requisição, o servidor executa regras de negócio, geralmente consulta um banco de dados e "monta" o HTML na hora antes de enviar a resposta.</p>
+        <p><strong>Exemplo Real:</strong> O feed de notícias do Instagram, o carrinho de compras da Amazon, a Netflix ou o seu dashboard do banco.</p>
+    </div>
+
+    <h2>O Caminho Básico da Informação</h2>
+    <ol>
+        <li><strong>Navegador (Requisição):</strong> O usuário digita uma URL (ou clica em um link). O navegador atua como cliente e envia uma requisição HTTP para a internet, que é roteada até o servidor onde o site está hospedado.</li>
+        <li><strong>Servidor (Processamento):</strong> O servidor recebe o pedido. Se for uma página estática, ele simplesmente localiza o arquivo HTML. Se for uma página dinâmica, o servidor roda scripts, comunica-se com o banco de dados e constrói o documento final.</li>
+        <li><strong>Resposta (Renderização):</strong> O servidor devolve uma resposta HTTP contendo o código (HTML, CSS, JS) para o navegador. O navegador interpreta esse código e desenha (renderiza) a interface gráfica na tela do usuário.</li>
+    </ol>
+
+    <hr class="divider">
+
+    <h2>Painel de Exercícios</h2>
+    <div class="button-grid">
+        <button id="exercicio01" class="btn-exercicio">Exercicio01</button>
+        <button id="exercicio02" class="btn-exercicio">Exercicio02</button>
+    </div>
+
+    <!-- Os scripts dos carregamentos -->
+    <script src="js/exercicio01.js"></script>
+    <!-- <script src="js/exercicio02.js"></script> -->
 </body>
 </html>

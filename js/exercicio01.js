@@ -11,8 +11,8 @@ if (nome != "" & curso != "" & funcionalidade != "") {
 
     alert("JavaScript carregado com sucesso!");
 
-    Console.log(`Nome: ${nome}`);
-    Console.log(`Curso: ${curso}`);
-    Console.log(`O que gostaria de aprender: ${funcionalidade}`);
+    console.log(`Nome: ${nome}`);
+    console.log(`Curso: ${curso}`);
+    console.log(`O que gostaria de aprender: ${funcionalidade}`);
 };
 })

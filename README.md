@@ -1,6 +1,30 @@
 # Fundamentos da Web
 
-Este repositório contém os materiais e a atividade sobre os fundamentos da web e conceitos de páginas estáticas vs dinâmicas.
+Este repositório contém os materiais e a atividade sobre os fundamentos da web e conceitos de páginas estáticas vs dinâmicas, Mas a página precisara de uma extensão do Vscode para funcionar,
+conhecida como Live Server:
+
+## O jeito de rodar
+
+Abra a aba de extensões do VS Code no menu lateral esquerdo (ou aperte Ctrl + Shift + X).
+Pesquise por Live Server e clique em Install.
+Agora, vá no seu arquivo index.html.
+Você tem duas opções para rodar:
+Clique com o botão direito em qualquer lugar do código HTML e escolha "Open with Live Server".
+Ou olhe bem no canto inferior direito da tela do VS Code, na barra azul, e clique num botãozinho escrito "Go Live".
+O seu navegador padrão vai abrir automaticamente.
+
+## Jeito alternativo com linux
+
+Usando o Terminal (Com Python)
+Como você está em um ambiente Linux você provavelmente tem o Python instalado nativamente.
+Você pode subir um servidor direto pelo terminal.
+Abra o seu terminal.
+Navegue até a pasta do seu projeto:
+{Caminho que você instalou o repositório}
+Inicie um servidor local nativo do Python rodando este comando:
+python3 -m http.server
+Abra o seu navegador e acesse: http://localhost:8000
+
 
 ## Respostas da Atividade
 

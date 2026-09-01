@@ -3,11 +3,11 @@ const botao2 = document.getElementById("exercicio02");
 botao2.addEventListener("click", () => {
     alert("executando Exercicio02");
     
-    const nome = prompt("Nome:");
-    let idade = Number(prompt("Idade:"));
-    const cidade = prompt("Cidade:");
-    const matriculado = Boolean(confirm("Se matriculado click em OK se não Cancelar:"));
-    const avaliacao = prompt("Nota:");
+    const nome = "Renan de Arruda Felix";
+    let idade = Number(20);
+    const cidade = "São Roque";
+    const matriculado = true;
+    const avaliacao = Number("10");
 
     console.log("Nome: " + nome + " Tipo: " + typeof(nome));
     console.log("Idade: " + idade + " Tipo: " + typeof(idade));

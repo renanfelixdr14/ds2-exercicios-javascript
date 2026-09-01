@@ -9,11 +9,11 @@ botao2.addEventListener("click", () => {
     const matriculado = true;
     const avaliacao = Number("10");
 
-    console.log("Nome: " + nome + " Tipo: " + typeof(nome));
-    console.log("Idade: " + idade + " Tipo: " + typeof(idade));
-    console.log("Cidade: " + cidade + " Tipo: " + typeof(cidade));
-    console.log("Matriculada(o): " + matriculado + " Tipo: " + typeof(matriculado));
-    console.log("Avaliação: " + avaliacao + " Tipo: " + typeof(avaliacao));
+    console.log("Nome: " + nome + " | Tipo: " + typeof(nome));
+    console.log("Idade: " + idade + " | Tipo: " + typeof(idade));
+    console.log("Cidade: " + cidade + " | Tipo: " + typeof(cidade));
+    console.log("Matriculada(o): " + matriculado + " | Tipo: " + typeof(matriculado));
+    console.log("Avaliação: " + avaliacao + " | Tipo: " + typeof(avaliacao));
 })
 
 //O motivo de algumas variáveis foram declaradas como "const" e outras como "let" é a reatribuição,

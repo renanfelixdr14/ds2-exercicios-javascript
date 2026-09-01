@@ -5,7 +5,7 @@ botao5.addEventListener("click", () => {
     
     let idade = Number(prompt("Digite sua idade:"));
 
-    if(idade == "" || idade < 1 || idade != Number){
+    if(idade == "" || idade < 1 ){
         alert("Idade inválida.");
     } else if(idade < 16){
         alert("Não pode votar.");

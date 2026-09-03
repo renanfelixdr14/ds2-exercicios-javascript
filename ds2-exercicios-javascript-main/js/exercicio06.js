@@ -16,7 +16,7 @@ botao6.addEventListener("click", () => {
         invalido = "sim";
     } else if (media < 5){
         final = "Reprovado";
-    } else if (media <= 7) {
+    } else if (media < 7) {
         final = "Recuperação";
     } else {
         final = "Aprovado";

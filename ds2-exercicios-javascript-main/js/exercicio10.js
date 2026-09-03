@@ -16,7 +16,9 @@ botao10.addEventListener("click", () => {
                 break;
             } else {
                 numeroTentativas++;
-                alert("Usuário ou senha incorretos. Tentativa " + numeroTentativas + " de 3.");
+                alert(`Usuário ou senha incorretos. Tentativa ${numeroTentativas} de 3.\n` +
+                      `Você tem ${3 - numeroTentativas} tentativas restantes.`);
+                
             }
         };
 
